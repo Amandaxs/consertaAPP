@@ -5,6 +5,9 @@ from pydub import AudioSegment
 import pydub
 from pathlib import Path
 
+
+import sys
+sys.path.append('/path/to/ffmpeg')
 #st.set_page_config(page_icon='🔁')
 
 st.write("""
