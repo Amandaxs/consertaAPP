@@ -45,15 +45,15 @@ elif st.session_state["authentication_status"]:
                 audio.export(save_path, format=file_type)
         return save_paths
 
-    def display_wavfile(wavpath):
-        audio_bytes = open(wavpath, 'rb').read()
-        file_type = Path(wavpath).suffix
-        st.audio(audio_bytes, format=f'app/audios/{file_type}', start_time=0)
+#     def display_wavfile(wavpath):
+#         audio_bytes = open(wavpath, 'rb').read()
+#         file_type = Path(wavpath).suffix
+#         st.audio(audio_bytes, format=f'app/audios/{file_type}', start_time=0)
 
 
     files = upload_and_save_wavfiles('app/audios')
 
-    for wavpath in files:
-        display_wavfile(wavpath)
+#     for wavpath in files:
+#         display_wavfile(wavpath)
 
 
