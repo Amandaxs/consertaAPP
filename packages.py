@@ -1,0 +1,3 @@
+chromium
+firefox-esr
+ffmpeg
