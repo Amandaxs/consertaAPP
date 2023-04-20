@@ -42,7 +42,7 @@ elif st.session_state["authentication_status"]:
 
                 save_path = Path(save_dir) / uploaded_file.name
                 save_paths.append(save_path)
-                audio.export(save_path, format=file_type)
+                audio.export(save_path, format='wav')
         return save_paths
 
 #     def display_wavfile(wavpath):
